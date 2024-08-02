@@ -5,4 +5,6 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: raj-step
-        run: echo "Hello World!"
+        run: |
+          touch /tmp/log.txt
+          echo "Hello World!" >> /tmp/log.txt
